@@ -22,8 +22,8 @@
   padding-right: 0;
 
   @include tablet {
-    // Column % Desktop
-    &--tablet {
+    // Column % Tablet
+    &--t {
       @for $i from 1 to $total-columns {
         &--#{$i} {
           width: percentage($i/$total-columns);
