@@ -30,6 +30,10 @@ npm run hot
 
 Once this is done you can now go to [http://localhost:8080](http://localhost:8080/) to view your project.
 
+## Grid system
+
+This project has a grid system built using flexbox, it currently has upto 12 cols and has util classes for spacing following increments of 8px.
+
 ## Deployment
 
 To produce production files use this will output everything into the dist folder
