@@ -17,10 +17,27 @@
 .grid-col {
   box-sizing: border-box;
   background-color: green;
-  // Column %
-  @for $i from 1 to $total-columns {
-    &--#{$i} {
-      width: percentage($i/$total-columns);
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  @include tablet {
+    // Column % Desktop
+    &--tablet {
+      @for $i from 1 to $total-columns {
+        &--#{$i} {
+          width: percentage($i/$total-columns);
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    // Column % Desktop
+    @for $i from 1 to $total-columns {
+      &--#{$i} {
+        width: percentage($i/$total-columns);
+      }
     }
   }
 }
