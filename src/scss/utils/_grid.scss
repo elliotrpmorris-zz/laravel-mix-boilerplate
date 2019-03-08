@@ -1,0 +1,33 @@
+.grid-container {
+  max-width: $xl-screen-width;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  // Remove Wrap
+  &--no-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.grid-col {
+  box-sizing: border-box;
+  background-color: green;
+  // Column %
+  @for $i from 1 to $total-columns {
+    &--#{$i} {
+      width: percentage($i/$total-columns);
+    }
+  }
+  &--padding-left {
+    padding-left: $gutter * 2;
+  }
+
+  &--padding-right {
+    padding-right: $gutter * 2;
+  }
+}
