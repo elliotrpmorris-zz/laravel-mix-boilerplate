@@ -6,4 +6,24 @@ $xl-screen-width: 1200px;
 
 // Grid
 $total-columns: 12;
-$gutter: 16px;
+$base-spacing: 0.5rem;
+$base-font-size: 16px;
+$spaceamounts: (
+  8: 0.5,
+  // 12,
+    // 16,
+    // 20,
+    // 24,
+    // 32,
+    // 40,
+    // 48,
+    // 56,
+    // 64,
+    // 72,
+    // 80,
+    // 88,
+    // 96,
+    // 104,
+    // 112,,,,
+); // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right); // Leave this variable alone

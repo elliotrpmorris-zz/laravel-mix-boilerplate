@@ -1,4 +1,4 @@
-/* Media Queries */
+// Media Queries
 @mixin small-devices {
   @media (min-width: $small-devices-width) {
     @content;

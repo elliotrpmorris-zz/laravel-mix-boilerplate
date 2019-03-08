@@ -23,20 +23,17 @@
       width: percentage($i/$total-columns);
     }
   }
+}
 
-  &--padding-left {
-    padding-left: $gutter;
-  }
+// Margin & padding
+@each $key, $value in $spaceamounts {
+  @each $side in $sides {
+    .m-#{str-slice($side, 0, 1)}-#{$key} {
+      margin-#{$side}: #{$value}rem;
+    }
 
-  &--padding-right {
-    padding-right: $gutter;
-  }
-
-  &--margin-left {
-    margin-left: $gutter;
-  }
-
-  &--margin-right {
-    margin-right: $gutter;
+    .p-#{str-slice($side, 0, 1)}-#{$key} {
+      padding-#{$side}: #{$value}rem;
+    }
   }
 }
