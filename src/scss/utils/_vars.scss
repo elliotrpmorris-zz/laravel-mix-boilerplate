@@ -6,7 +6,7 @@ $xl-screen-width: 1200px;
 
 // Grid
 $total-columns: 12;
-$base-spacing: 0.5rem;
+$base-spacing: 1rem;
 $base-font-size: 16px;
 // Adjust this to be the rem size you need
 $spaceamounts: (
@@ -25,4 +25,4 @@ $spaceamounts: (
   104: 6.5,
   112: 7,
 );
-$sides: (top, bottom, left, right);
+$sides: (all, top, bottom, left, right);

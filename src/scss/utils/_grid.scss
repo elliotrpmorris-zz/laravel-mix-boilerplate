@@ -1,6 +1,10 @@
 .grid-container {
   max-width: $xl-screen-width;
   margin: 0 auto;
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 .grid-row {
@@ -8,6 +12,7 @@
   -ms-flex-wrap: wrap;
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -1rem;
   // Remove Wrap
   &--no-wrap {
     flex-wrap: nowrap;
@@ -17,10 +22,9 @@
 .grid-col {
   box-sizing: border-box;
   background-color: green;
+  border: 0.5px dashed black;
+  text-align: center;
   width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-
   @include tablet {
     // Column % Tablet
     &--t {
