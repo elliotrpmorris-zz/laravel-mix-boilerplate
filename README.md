@@ -34,6 +34,12 @@ Once this is done you can now go to [http://localhost:8080](http://localhost:808
 
 This project has a grid system built using flexbox, it currently has upto 12 cols and has util classes for spacing following increments of 8px.
 
+For example to have a 4 col wide column with the margin of 8px on the left in rem simply use the below class
+
+```
+grid-col grid-col--4 m-l-8
+```
+
 ## Deployment
 
 To produce production files use this will output everything into the dist folder
