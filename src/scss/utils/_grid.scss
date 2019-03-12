@@ -1,6 +1,7 @@
 .grid-container {
   max-width: $xl-screen-width;
   margin: 0 auto;
+  padding: 0 $base-spacing;
   &--fluid {
     margin: 0;
     max-width: 100%;
@@ -24,6 +25,7 @@
   background-color: green;
   border: 0.5px dashed black;
   text-align: center;
+  padding: 0 $base-spacing;
   width: 100%;
   @include tablet {
     // Column % Tablet
